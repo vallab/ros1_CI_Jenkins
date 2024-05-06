@@ -8,6 +8,11 @@
    ```bash
    git ls-remote -h -- git@github.com:vallab/ros1_ci.git HEAD
    ```
+   user:~$ git ls-remote -h -- git@github.com:vallab/ros1_ci.git HEAD
+   The authenticity of host 'github.com (4.208.26.197)' can't be established.
+   ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+   Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+   Warning: Permanently added 'github.com,4.208.26.197' (ECDSA) to the list of known hosts.
 
 1. **Setting Up Jenkins:**  
    If Jenkins isn't already running (check using `pf faux | grep jenkins`), follow these instructions to get it up and running. A shell script to install the latest version of Jenkins is available within the ROSject. Run these commands in your ROSject terminal:
