@@ -49,6 +49,13 @@
    On the Jenkins dashboard, locate the "ros1_ci" project. You can manually initiate a build by pressing the "Build Now" button on the project page. Alternatively, commit changes to the repository to automatically trigger a build.
 
 2. **Building via Pull Request:**  
+   - check if webhook address is same as 
+      ```https://i-0dce5c6557a09452b.robotigniteacademy.com/66807303-af3a-4977-bbba-b19d8eab57a4/jenkins/github-webhook/``` 
+      if it's not 
+      ```bash
+      echo "$(jenkins_address)github-webhook/"
+      ```
+      and get it to be updated by the user in github.com user account.  
    - Add a new `test.txt` file to the repository and open a pull request.
    - Once merged, navigate to the "ros1_ci" project page or the Build Executor tab in Jenkins.
    - Wait briefly (less than a minute) for the build to start automatically due to the SCM change.
